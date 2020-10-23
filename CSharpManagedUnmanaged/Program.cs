@@ -18,20 +18,20 @@ namespace CSharpManagedUnmanaged
             WnMH.index = 1;
 
             string _filePath = "BINARY.bin";
-            Console.Write("WnMH2 before saving" +
-                          "\nWnMH2.id : " + WnMH.id +
-                          "\nWnMH2.index : " + WnMH.index + "\n\n");
+            Console.Write("WnMH before saving" +
+                          "\nWnMH.id : " + WnMH.id +
+                          "\nWnMH.index : " + WnMH.index + "\n\n");
 
             SaveToFile(_filePath, WnMH);
             WnMH.index = 0;
-            Console.Write("WnMH2 before reading" +
-                          "\nWnMH2.id : " + WnMH.id +
-                          "\nWnMH2.index : " + WnMH.index + "\n\n");
+            Console.Write("WnMH before reading" +
+                          "\nWnMH.id : " + WnMH.id +
+                          "\nWnMH.index : " + WnMH.index + "\n\n");
 
             WnMH = ReadFromFile(_filePath, WnMH.StructSize);
-            Console.Write("WnMH2 after reading" + 
-                          "\nWnMH2.id : " + WnMH.id +
-                          "\nWnMH2.index : " + WnMH.index);
+            Console.Write("WnMH after reading" + 
+                          "\nWnMH.id : " + WnMH.id +
+                          "\nWnMH.index : " + WnMH.index);
             Console.ReadKey();
 
         }
