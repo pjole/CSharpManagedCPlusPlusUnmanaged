@@ -1,0 +1,30 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly C++ CSharp, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class CPlus.ConfigStruct: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    IntPtr StructPointer : Public
+    Int32 StructSize IsLong : Public
+Class CPlus.W_newModuleHeader: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :CPlus.ConfigStruct
+    Void .ctor(IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    CPlus.newModuleHeader* _nMH : Public
+  Properties:
+    UInt32 index 'get set' IsLong : 
+    UInt16 id  'get set' : 
+  Methods:
+    get_id(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_id(UInt16): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_index(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_index(UInt32 IsLong): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
